@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Eng. João Silva</h3>
+            <h3 className="text-xl font-bold mb-4">Eng. Yan Raphael</h3>
             <p className="text-background/70 text-sm leading-relaxed">
               Engenheiro Civil especializado em projetos estruturais e
               acompanhamento de obras. Comprometido com a qualidade e excelência
@@ -69,7 +69,7 @@ const Footer = () => {
             <h4 className="font-bold mb-4">Redes Sociais</h4>
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com/in/engjoaosilva"
+                href="https://www.linkedin.com/in/yan-alves-882aa232a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors"
@@ -77,13 +77,13 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contato@engjoaosilva.com.br"
+                href="mailto:yanrafa2015@gmail.com"
                 className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors"
               >
                 <Mail className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/5596037861"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-background/20 transition-colors"
@@ -96,11 +96,9 @@ const Footer = () => {
 
         <div className="border-t border-background/20 pt-8 text-center">
           <p className="text-background/60 text-sm">
-            © {currentYear} Eng. João Silva. Todos os direitos reservados.
+            © {currentYear} Eng. Yan Raphael. Todos os direitos reservados.
           </p>
-          <p className="text-background/40 text-xs mt-2">
-            CREA-XX 12345 | Engenheiro Civil
-          </p>
+          <p className="text-background/40 text-xs mt-2">Engenheiro Civil</p>
         </div>
       </div>
     </footer>

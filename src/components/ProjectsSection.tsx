@@ -1,62 +1,62 @@
+import { useEffect, useState } from "react"; // Adicionar imports
 import ProjectCard from "./ProjectCard";
+import { client } from "@/lib/contentful"; // Importar o cliente
 
-const projects = [
-  {
-    id: "1",
-    title: "Edifício Residencial Aurora",
-    description: "Projeto estrutural completo para edifício de 12 pavimentos com estrutura em concreto armado.",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop",
-    category: "Residencial",
-  },
-  {
-    id: "2",
-    title: "Galpão Industrial MetalTech",
-    description: "Projeto de estrutura metálica para galpão industrial com 2.000m² de área construída.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop",
-    category: "Industrial",
-  },
-  {
-    id: "3",
-    title: "Centro Comercial Plaza",
-    description: "Acompanhamento de obra e fiscalização de centro comercial com 50 lojas.",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop",
-    category: "Comercial",
-  },
-  {
-    id: "4",
-    title: "Residência Família Santos",
-    description: "Projeto estrutural e acompanhamento de obra para residência de alto padrão.",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop",
-    category: "Residencial",
-  },
-  {
-    id: "5",
-    title: "Ponte sobre Rio Verde",
-    description: "Projeto estrutural de ponte em concreto protendido com 80 metros de extensão.",
-    image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=600&h=400&fit=crop",
-    category: "Infraestrutura",
-  },
-  {
-    id: "6",
-    title: "Hospital Regional",
-    description: "Laudo técnico e projeto de reforma estrutural para ampliação hospitalar.",
-    image: "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=600&h=400&fit=crop",
-    category: "Institucional",
-  },
-];
+// Defina a interface (ou use 'any' se preferir simplificar agora)
+interface Project {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  category: string;
+}
 
 const ProjectsSection = () => {
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        // Substitua 'projeto' pelo ID do seu Content Type no Contentful
+        const response = await client.getEntries({ content_type: "projeto" });
+
+        const formattedProjects = response.items.map((item: any) => ({
+          id: item.sys.id,
+          title: item.fields.title,
+          description: item.fields.description,
+          image: item.fields.image?.fields?.file?.url
+            ? `https:${item.fields.image.fields.file.url}`
+            : "",
+          category: item.fields.category,
+        }));
+
+        setProjects(formattedProjects);
+      } catch (error) {
+        console.error("Erro ao buscar projetos:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProjects();
+  }, []);
+
+  if (loading)
+    return <div className="text-center py-20">Carregando projetos...</div>;
+
   return (
     <section id="projetos" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
+        {/* ... (O cabeçalho com h2 e p mantém igual) ... */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Meus Projetos
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Conheça alguns dos projetos que desenvolvi ao longo da minha carreira. 
-            Clique em cada card para ver mais detalhes.
+            Conheça alguns dos projetos que desenvolvi ao longo da minha
+            carreira. Clique em cada card para ver mais detalhes.
           </p>
         </div>
 
@@ -71,5 +71,3 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
-
-export { projects };
