@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, Calendar, MapPin, Building2 } from "lucide-react";
+import {
+  ArrowLeft,
+  Calendar,
+  MapPin,
+  Building2,
+  ExternalLink,
+} from "lucide-react"; // Adicionei ExternalLink
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -17,6 +23,7 @@ interface Project {
   year: string;
   area: string;
   services: string[];
+  budgetUrl?: string; // Novo campo opcional
 }
 
 const ProjectDetail = () => {
@@ -31,7 +38,6 @@ const ProjectDetail = () => {
       try {
         const entry: any = await client.getEntry(id);
 
-        // Mapeia os dados do Contentful para o formato usado no layout
         setProject({
           title: entry.fields.title,
           description: entry.fields.description,
@@ -49,6 +55,8 @@ const ProjectDetail = () => {
           year: entry.fields.year,
           area: entry.fields.area,
           services: entry.fields.services || [],
+          // Mapeando o novo campo (se não existir, fica string vazia)
+          budgetUrl: entry.fields.budgetUrl || "",
         });
       } catch (error) {
         console.error("Erro ao buscar projeto:", error);
@@ -199,9 +207,24 @@ const ProjectDetail = () => {
 
               <hr className="my-6 border-border" />
 
-              <Link to="/#contato">
-                <Button className="w-full">Solicitar Orçamento</Button>
-              </Link>
+              {/* LÓGICA DO BOTÃO: Se tiver URL, usa <a>, senão usa Link interno */}
+              {project.budgetUrl ? (
+                <a
+                  href={project.budgetUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full block"
+                >
+                  <Button className="w-full">
+                    Ver Projeto
+                    <ExternalLink className="ml-2 w-4 h-4" />
+                  </Button>
+                </a>
+              ) : (
+                <Link to="/#contato">
+                  <Button className="w-full">Ver Projeto</Button>
+                </Link>
+              )}
             </div>
           </div>
         </div>
