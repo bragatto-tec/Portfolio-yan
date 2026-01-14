@@ -5,7 +5,8 @@ const AboutSection = () => {
     {
       icon: Building2,
       title: "Projetos Estruturais",
-      description: "Elaboração de projetos estruturais para edificações residenciais e comerciais.",
+      description:
+        "Elaboração de projetos estruturais para edificações residenciais e comerciais.",
     },
     {
       icon: ClipboardList,
@@ -20,7 +21,8 @@ const AboutSection = () => {
     {
       icon: Award,
       title: "Consultoria",
-      description: "Consultoria técnica especializada para construtoras e incorporadoras.",
+      description:
+        "Consultoria técnica especializada para construtoras e incorporadoras.",
     },
   ];
 
@@ -41,24 +43,27 @@ const AboutSection = () => {
                 Formação e Experiência
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Graduado em Engenharia Civil pela Universidade Federal, com especialização em Estruturas de Concreto. 
-                Possuo mais de 10 anos de experiência no mercado, atuando em projetos de pequeno a grande porte.
+                Cursando Engenharia Civil pela Universidade de Brasília, com
+                especialização em Estruturas de Concreto. Possuo mais de 2 anos
+                de experiência no mercado, atuando em projetos de pequeno a
+                grande porte.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Ao longo da minha carreira, desenvolvi expertise em projetos estruturais, acompanhamento de obras, 
-                elaboração de laudos técnicos e consultoria para empresas do setor da construção civil.
+                Ao longo da minha carreira, desenvolvi expertise em projetos
+                estruturais, acompanhamento de obras, elaboração de laudos
+                técnicos e consultoria para empresas do setor da construção
+                civil.
               </p>
               <div className="flex items-center gap-4 mt-6">
-                <div className="bg-primary/10 px-4 py-2 rounded">
-                  <span className="text-primary font-bold">CREA-XX 12345</span>
-                </div>
                 <div className="bg-accent/10 px-4 py-2 rounded">
-                  <span className="text-accent font-bold">+50 Projetos</span>
+                  <span className="text-accent font-bold">+30 Projetos</span>
                 </div>
               </div>
             </div>
             <div className="bg-muted rounded-lg p-8">
-              <h4 className="font-bold text-foreground mb-4">Áreas de Atuação:</h4>
+              <h4 className="font-bold text-foreground mb-4">
+                Áreas de Atuação:
+              </h4>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
@@ -95,7 +100,9 @@ const AboutSection = () => {
                   <item.icon className="w-7 h-7 text-primary" />
                 </div>
                 <h4 className="font-bold text-foreground mb-2">{item.title}</h4>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
+                <p className="text-sm text-muted-foreground">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>

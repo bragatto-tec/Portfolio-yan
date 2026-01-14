@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Eng. João Silva</h3>
             <p className="text-background/70 text-sm leading-relaxed">
-              engenheiro Civil especializado em projetos estruturais e
+              Engenheiro Civil especializado em projetos estruturais e
               acompanhamento de obras. Comprometido com a qualidade e excelência
               em cada projeto.
             </p>

@@ -17,18 +17,22 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="inicio" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-primary to-accent pt-16">
+    <section
+      id="inicio"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-primary to-accent pt-16"
+    >
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
           {/* Photo */}
           <div className="relative">
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary-foreground/30 shadow-2xl">
               <div className="w-full h-full bg-muted flex items-center justify-center text-muted-foreground">
-                <span className="text-sm text-center px-4">Sua foto aqui</span>
+                <img
+                  src="foto/1757428138584.png"
+                  alt="Foto de Yan Raphael de Castro Alves"
+                  className="w-full h-full object-cover"
+                />
               </div>
-            </div>
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent rounded-full flex items-center justify-center border-4 border-primary">
-              <span className="text-accent-foreground text-xs font-bold text-center">CREA<br/>12345</span>
             </div>
           </div>
 
@@ -38,10 +42,11 @@ const HeroSection = () => {
               Engenheiro Civil
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4">
-              João Silva
+              Yan Raphael de Castro Alves
             </h1>
             <p className="text-primary-foreground/80 text-lg md:text-xl max-w-md mb-8">
-              Especialista em projetos estruturais e acompanhamento de obras com mais de 10 anos de experiência no mercado.
+              Especialista em projetos estruturais e acompanhamento de obras com
+              mais de 2 anos de experiência no mercado.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button

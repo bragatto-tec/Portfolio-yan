@@ -15,7 +15,9 @@ const ContactSection = () => {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
@@ -42,26 +44,26 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "contato@engjoaosilva.com.br",
-      href: "mailto:contato@engjoaosilva.com.br",
+      value: "yanrafa2015@gmail.com",
+      href: "mailto:yanrafa2015@gmail.com",
     },
     {
       icon: Phone,
       label: "Telefone/WhatsApp",
-      value: "(11) 99999-9999",
-      href: "https://wa.me/5511999999999",
+      value: "(61)9603-7861",
+      href: "https://wa.me/556196037861",
     },
     {
       icon: MapPin,
       label: "Localização",
-      value: "São Paulo, SP - Brasil",
+      value: "Brasília, DF - Brasil",
       href: null,
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "/in/engjoaosilva",
-      href: "https://linkedin.com/in/engjoaosilva",
+      value: "/in/yan-alves-882aa232a",
+      href: "https://www.linkedin.com/in/yan-alves-882aa232a/",
     },
   ];
 
@@ -74,7 +76,7 @@ const ContactSection = () => {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Tem um projeto em mente? Entre em contato para conversarmos sobre 
+            Tem um projeto em mente? Entre em contato para conversarmos sobre
             como posso ajudar a transformar suas ideias em realidade.
           </p>
         </div>
@@ -171,21 +173,13 @@ const ContactSection = () => {
                           {item.value}
                         </a>
                       ) : (
-                        <span className="text-foreground font-medium">{item.value}</span>
+                        <span className="text-foreground font-medium">
+                          {item.value}
+                        </span>
                       )}
                     </div>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-10 p-6 bg-muted rounded-lg">
-                <h4 className="font-bold text-foreground mb-2">
-                  Horário de Atendimento
-                </h4>
-                <p className="text-muted-foreground text-sm">
-                  Segunda a Sexta: 8h às 18h<br />
-                  Sábado: 8h às 12h
-                </p>
               </div>
             </div>
           </div>

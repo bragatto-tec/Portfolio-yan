@@ -37,13 +37,13 @@ const CVSection = () => {
           <div className="mt-8 flex flex-wrap justify-center gap-8 text-primary-foreground/70">
             <div>
               <span className="block text-3xl font-bold text-primary-foreground">
-                10+
+                2+
               </span>
               <span className="text-sm">Anos de Experiência</span>
             </div>
             <div>
               <span className="block text-3xl font-bold text-primary-foreground">
-                50+
+                30+
               </span>
               <span className="text-sm">Projetos Realizados</span>
             </div>
