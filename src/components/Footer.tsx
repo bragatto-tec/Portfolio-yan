@@ -11,8 +11,9 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Eng. João Silva</h3>
             <p className="text-background/70 text-sm leading-relaxed">
-              Engenheiro Civil especializado em projetos estruturais e acompanhamento de obras. 
-              Comprometido com a qualidade e excelência em cada projeto.
+              ngenheiro Civil especializado em projetos estruturais e
+              acompanhamento de obras. Comprometido com a qualidade e excelência
+              em cada projeto.
             </p>
           </div>
 
@@ -21,27 +22,42 @@ const Footer = () => {
             <h4 className="font-bold mb-4">Links Rápidos</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#inicio" className="text-background/70 hover:text-background transition-colors">
+                <a
+                  href="#inicio"
+                  className="text-background/70 hover:text-background transition-colors"
+                >
                   Início
                 </a>
               </li>
               <li>
-                <a href="#sobre" className="text-background/70 hover:text-background transition-colors">
+                <a
+                  href="#sobre"
+                  className="text-background/70 hover:text-background transition-colors"
+                >
                   Sobre
                 </a>
               </li>
               <li>
-                <a href="#projetos" className="text-background/70 hover:text-background transition-colors">
+                <a
+                  href="#projetos"
+                  className="text-background/70 hover:text-background transition-colors"
+                >
                   Projetos
                 </a>
               </li>
               <li>
-                <a href="#curriculo" className="text-background/70 hover:text-background transition-colors">
+                <a
+                  href="#curriculo"
+                  className="text-background/70 hover:text-background transition-colors"
+                >
                   Currículo
                 </a>
               </li>
               <li>
-                <a href="#contato" className="text-background/70 hover:text-background transition-colors">
+                <a
+                  href="#contato"
+                  className="text-background/70 hover:text-background transition-colors"
+                >
                   Contato
                 </a>
               </li>
