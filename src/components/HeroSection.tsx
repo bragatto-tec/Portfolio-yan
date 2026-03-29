@@ -28,7 +28,7 @@ const HeroSection = () => {
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary-foreground/30 shadow-2xl">
               <div className="w-full h-full bg-muted flex items-center justify-center text-muted-foreground">
                 <img
-                  src="foto/1757428138584.png"
+                  src="/foto/1757428138584.png"
                   alt="Foto de Yan Raphael de Castro Alves"
                   className="w-full h-full object-cover"
                 />
