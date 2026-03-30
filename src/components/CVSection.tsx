@@ -21,8 +21,8 @@ const CVSection = () => {
 
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
             Faça o download do meu currículo completo em PDF para conhecer mais
-            sobre minha formação, experiência profissional e projetos
-            realizados.
+            sobre minha formação, experiência profissional e atuação em
+            projetos estruturais de médio e grande porte.
           </p>
 
           <Button
@@ -37,7 +37,7 @@ const CVSection = () => {
           <div className="mt-8 flex flex-wrap justify-center gap-8 text-primary-foreground/70">
             <div>
               <span className="block text-3xl font-bold text-primary-foreground">
-                2+
+                3+
               </span>
               <span className="text-sm">Anos de Experiência</span>
             </div>

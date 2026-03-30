@@ -55,8 +55,9 @@ const ProjectsSection = () => {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Conheça alguns dos projetos que desenvolvi ao longo da minha
-            carreira. Clique em cada card para ver mais detalhes.
+            Conheça alguns dos projetos estruturais que desenvolvi, com foco em
+            soluções para empreendimentos de médio e grande porte. Clique em
+            cada card para ver mais detalhes.
           </p>
         </div>
 

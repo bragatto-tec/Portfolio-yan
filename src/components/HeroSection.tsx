@@ -45,8 +45,9 @@ const HeroSection = () => {
               Yan Raphael de Castro Alves
             </h1>
             <p className="text-primary-foreground/80 text-lg md:text-xl max-w-md mb-8">
-              Especialista em projetos estruturais e acompanhamento de obras com
-              mais de 2 anos de experiência no mercado.
+              Especialista em projetos estruturais, com mais de 3 anos de
+              experiência no mercado e atuação em projetos de médio e grande
+              porte.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button

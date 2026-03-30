@@ -11,9 +11,8 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Eng. Yan Raphael</h3>
             <p className="text-background/70 text-sm leading-relaxed">
-              Engenheiro Civil especializado em projetos estruturais e
-              acompanhamento de obras. Comprometido com a qualidade e excelência
-              em cada projeto.
+              Engenheiro Civil especializado em projetos estruturais.
+              Comprometido com a qualidade e excelência em cada projeto.
             </p>
           </div>
 

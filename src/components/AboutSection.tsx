@@ -10,19 +10,21 @@ const AboutSection = () => {
     },
     {
       icon: ClipboardList,
-      title: "Laudos Técnicos",
-      description: "Laudos de vistoria, avaliação e inspeção predial.",
+      title: "Modelagem BIM de Estruturas",
+      description:
+        "Desenvolvimento de modelos BIM para coordenação e planejamento estrutural.",
     },
     {
       icon: HardHat,
-      title: "Acompanhamento de Obras",
-      description: "Gerenciamento e fiscalização de obras de construção civil.",
+      title: "Detalhamento Técnico",
+      description:
+        "Produção de detalhamentos técnicos completos para execução em campo.",
     },
     {
       icon: Award,
-      title: "Consultoria",
+      title: "Compatibilização de Projetos",
       description:
-        "Consultoria técnica especializada para construtoras e incorporadoras.",
+        "Integração e revisão de projetos para reduzir interferências e retrabalho.",
     },
   ];
 
@@ -44,15 +46,14 @@ const AboutSection = () => {
               </h3>
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Cursando Engenharia Civil pela Universidade de Brasília, com
-                especialização em Estruturas de Concreto. Possuo mais de 2 anos
-                de experiência no mercado, atuando em projetos de pequeno a
+                especialização em Estruturas Metálicas. Possuo mais de 3 anos
+                de experiência no mercado, atuando em projetos de médio e
                 grande porte.
               </p>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Ao longo da minha carreira, desenvolvi expertise em projetos
-                estruturais, acompanhamento de obras, elaboração de laudos
-                técnicos e consultoria para empresas do setor da construção
-                civil.
+                Ao longo da minha carreira, desenvolvi expertise na elaboração
+                de projetos estruturais para diferentes tipos de empreendimentos
+                no setor da construção civil.
               </p>
               <div className="flex items-center gap-4 mt-6">
                 <div className="bg-accent/10 px-4 py-2 rounded">
@@ -67,23 +68,23 @@ const AboutSection = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  Projetos Estruturais em Concreto Armado
+                  Projetos Estruturais (Metálica e Concreto)
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  Projetos em Estrutura Metálica
+                  Modelagem BIM de Estruturas
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  Reformas e Ampliações
+                  Detalhamento Técnico de Projetos
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  Regularização de Obras
+                  Compatibilização de Projetos
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  Perícias e Vistorias Técnicas
+                  Leitura e Interpretação de Projetos
                 </li>
               </ul>
             </div>
